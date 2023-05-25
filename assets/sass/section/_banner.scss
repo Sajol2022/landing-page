@@ -1,0 +1,120 @@
+/*==========================================================================
+Banner
+========================================================================== */
+.banner__area {
+    padding-top: 220px;
+    padding-bottom: 120px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    &-title {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 900px;
+        h1 {
+            margin-bottom: 60px;          
+        }
+    }
+    &-image {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 40px;
+        margin-top: -60px;
+        &-left {
+            display: flex;
+            img {
+                max-width: 420px;
+            }
+            &-two {
+                margin-top: 115px;
+                margin-left: -208px;
+            }
+        }
+        &-right {
+            display: flex;
+            img {
+                max-width: 420px;
+            }
+            &-one {
+                margin-top: 115px;
+                margin-right: -208px;
+                position: relative;
+            }
+        }
+    }
+}
+.scroll-down {
+    text-align: center;
+    margin-top: -50px;
+    img {
+        max-width: 130px;
+    }
+}
+@media (max-width: 1399px) {
+    .banner__area {
+        &-image {
+            gap: 80px;
+            &-left img,
+            &-right img {
+                max-width: 310px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .banner__area {
+        &-title {
+            h1 {
+                margin-bottom: 40px;
+                font-size: 50px;
+                line-height: 60px;                
+            }
+        }
+        &-image {
+            margin-top: -10px;
+            &-left img,
+            &-right img {
+                max-width: 250px;
+            }
+        }
+    }
+    .scroll-down {
+        img {
+            max-width: 90px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .banner__area {
+        padding-top: 180px;
+        padding-bottom: 100px;
+        &-title {
+            h1 {
+                font-size: 40px;
+                line-height: 50px;                
+            }
+        }
+        &-image {
+            display: none;
+        }
+    }
+    .scroll-down {
+        margin-top: 30px;
+        img {
+            max-width: 70px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .banner__area {
+        &-title {
+            h1 {
+                font-size: 35px;
+                line-height: 45px;                
+            }
+        }
+    }
+}

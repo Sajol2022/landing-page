@@ -1,0 +1,33 @@
+/*==========================================================================
+Features
+==========================================================================*/
+.features__area {
+    background: var(--color-6);
+    padding: 120px 0;
+    &-title {
+        max-width: 730px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &-item {
+        text-align: center;
+        padding: 55px 20px;
+        background: var(--white);
+        transition: 0.5s;
+        &-icon {
+            img {
+                max-width: 80px;
+                border-radius: 5px;
+                margin-bottom: 15px;                
+            }
+        }
+        p {
+            font-weight: 600;
+            margin: 0;
+        }
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--box-shadow-1);            
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/*==========================================================================
+Footer
+==========================================================================*/
+.footer__area {
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    position: relative;
+    z-index: 1;
+    padding: 120px 0;
+    &-content {
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center; 
+        a {
+            img {
+                max-width: 16px;
+                margin-right: 6px;
+                margin-top: -1px;
+            }
+        }
+        h2 {
+            margin-bottom: 40px;
+            color: var(--white);
+        }
+        &-logo {     
+            margin-bottom: 30px;   
+            a {
+                display: inline-block;
+                img {
+                    max-width: 155px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/*==========================================================================
+Feedback
+==========================================================================*/
+.feedback__area {
+    padding: 120px 0;
+    &-title {
+        h2 {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    &-item {
+        box-shadow: var(--box-shadow-2);
+        padding: 40px 30px;
+        display: flex;
+        gap: 20px;
+        &-icon {
+            img {
+                max-width: 70px;
+            }
+        }
+        &-content {
+            &-reating {
+                margin-bottom: 5px;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        i {
+                            color: var(--primary-color-1);
+                        }
+                    }
+                }
+            }
+            p {
+                max-width: 270px;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .feedback__area {
+        &-item {
+            padding: 35px 22px;
+            gap: 16px;
+            &-icon {
+                img {
+                    max-width: 55px;
+                }
+            }
+        }
+    }
+}

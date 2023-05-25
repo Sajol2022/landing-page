@@ -1,0 +1,36 @@
+@for $i from 0 to 15 {
+    .mt-#{5 * $i}{
+        margin-top: 5px * $i;
+    }
+    .mb-#{5 * $i}{
+        margin-bottom: 5px * $i;
+    }
+}
+@media (max-width: 1199px) {
+    @for $i from 0 to 10 {
+        .xl-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+    }
+}
+@media (max-width: 991px) {
+    @for $i from 0 to 10 {
+        .lg-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+    }
+}
+@media (max-width: 767px) {
+    @for $i from 0 to 10 {
+        .md-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+    }
+}
+@media (max-width: 575px) {
+    @for $i from 0 to 10 {
+        .sm-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+    }
+}
